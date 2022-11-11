@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
+body{
+    position: relative;
+}
 
 main{
-    height: calc(100vh - 100px);
     width: 100%;
     background-color: blue;
+    overflow-y: scroll;
+    position: relative;
 }
 
 footer{
     height: 100px;
     width: 100%;
     background-color: pink;
+    position: absolute;
+    z-index: 1;
 }
 
 .wrapper{
@@ -22,18 +28,64 @@ footer{
     height: calc(100vh - 100px);
 }
 
-.sidebar{
-    width: 100%;
+aside{
     background-color: yellow;
-    height: calc(100vh - 100px);
+}
+
+.sidebar-container{
+    height: 100%;
+}
+
+.sidebar{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo, .sidebar .profilo{
+    width: 25%;
+    background-color: red;
+}
+
+.sidebar .menù{
+    width: 50%;
+    background-color: orange;
 }
 
 .container{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #upgrade{
     width: 100%;
     background-color: aqua;
     height: 100px;
+}
+
+.navbar{
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+#recently-played .cards{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#recently-played .card{
+    width: calc(100% / 2);
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+    margin: 0,75rem;
+
 }

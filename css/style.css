@@ -39,14 +39,12 @@ aside{
 
 .sidebar{
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .sidebar .logo, .sidebar .profilo{
-    width: 50%;
     background-color: red;
 }
 
@@ -91,8 +89,14 @@ aside{
 
 .navbar ul{
     display: flex;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
+.navbar ul li{
+
+    padding-right: 1rem;
+}
 /* sezione cards */
 
 .cards{
@@ -115,6 +119,15 @@ aside{
 
     /* aside */
 
+    aside{
+        width: auto;
+    }
+
+    .sidebar .logo, .sidebar .profilo{
+        background-color: red;
+        margin-right: 1rem;
+    }
+
     .logo-sm{
         display: none;
     }
@@ -131,6 +144,18 @@ aside{
         display: block;
     }
     
+    .profilo .lista-big li{ 
+        display: flex;
+    }
+
+    .profilo .lista-big li img:first-child{ 
+        width: 1rem;
+    }
+    .profilo .lista-big li img:last-child{ 
+        width: 1.5rem;
+    }
+
+    /* main */
 
 }
     

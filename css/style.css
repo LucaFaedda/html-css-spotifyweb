@@ -233,16 +233,18 @@ main{
         margin: 1rem 0rem 1rem 1rem;
     }
     
-    .lista-big{
+    .lista-big, .second-list{
         display: block;
         text-align: left;
         color: #7f8185 ;
         margin-left: 1rem;
     }
 
-    .lista-big li{
+    .lista-big li, .second-list li{
         display: flex;
         align-items: center;
+        line-height: 3;
+        font-size: 12px;
     }
 
     .lista-big img{
@@ -255,17 +257,11 @@ main{
     }
 
     .second-list{
-        color: #7f8185 ;
+        overflow-y: auto;
     }
 
     .second-list li:first-child{
         color: #fff;
-    }
-
-    .lista-big li{ 
-        display: flex;
-        line-height: 3;
-        font-size: 12px;
     }
 
     .fa-plus{

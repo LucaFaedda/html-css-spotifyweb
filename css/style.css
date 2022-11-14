@@ -12,7 +12,7 @@ body{
 
 
 footer{
-    height: 100px;
+    height: 75px;
     width: 100vw;
     background-color:#282828;
     position: absolute;
@@ -42,7 +42,7 @@ footer{
 
 .wrapper{
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 75px);
     width: 100vw;
 }
 
@@ -190,6 +190,11 @@ main{
     margin: 1rem;
 }
 
+
+#artisti-popolari img{
+    border-radius: 50%;
+}
+
 /* footer */
 
 .corrente{
@@ -204,14 +209,24 @@ main{
     font-size: 15px;
 }
 
+.invisibile-mobile{
+    display: none;
+}
+
 .icone i:first-child{
     margin-bottom: 0.5rem;
 }
 
 .corrente img{
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
+    margin-left: 1rem;
 }
+
+.corrente .testo{
+    padding: 0 1rem;
+}
+
 
 .testo p{
     color: #7f8185;
@@ -261,7 +276,7 @@ main{
     border-radius: 20px;
     height: 5px;
     background-color: red;
-    margin-left: 1rem;
+    margin-right: 1rem;
     width: 100px;
 
 }
@@ -361,21 +376,51 @@ main{
         width:  calc(100vw - 200px);
     }
 
+    /* footer */
+
+    .invisibile-mobile{
+        display: block;
+    }
+
+    .visibile-mobile{
+        display: none;
+    }
+
 }
 
 
 
 @media screen and (min-width:768px){
 
-    #recently-played .card{
+    /* #recently-played .card{
+        width: calc(100% / 4 - 2rem);
+
+    } */
+
+    .cards .card{
         width: calc(100% / 4 - 2rem);
 
     }
+
+    .corrente .icone{
+        flex-direction: row;
+        padding: 0 1rem;
+    }
+
+.corrente .icone i{
+    padding: 0 0.5rem;
+}
+
 }
     
 @media screen and (min-width:992px) {
     
-    #recently-played .card{
+    /* #recently-played .card{
+        width: calc(100% / 6 - 2rem);
+
+    } */
+
+    .cards .card{
         width: calc(100% / 6 - 2rem);
 
     }

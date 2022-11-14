@@ -17,6 +17,20 @@ footer{
     background-color: pink;
     position: absolute;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.corrente, .volume{
+    width: 25%;
+    display: flex;
+}
+
+.riproduzione{
+    width: 50%;
+    height: 100px;
+    background-color: orange;
 }
 
 .wrapper{
@@ -169,6 +183,20 @@ main{
     margin: 1rem;
 }
 
+/* footer */
+
+.corrente{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.corrente img{
+    width: 50px;
+    height: 50px;
+}
+
+
 @media screen and (min-width: 576px){
 
     /* aside */
@@ -215,6 +243,14 @@ main{
         font-size: 14px;
     }
 
+    .second-list{
+        color: #7f8185 ;
+    }
+
+    .second-list li:first-child{
+        color: #fff;
+    }
+
     .lista-big li{ 
         display: flex;
         line-height: 3;
@@ -233,11 +269,21 @@ main{
         margin-top: 2rem;
     }
 
-    .profilo .lista-big li img:first-child{ 
-        width: 1rem;
-    }
-    .profilo .lista-big li img:last-child{ 
+    .profilo .lista-big li:first-child img{ 
         width: 1.5rem;
+    }
+
+    .bordo{
+        color: #7f8185;
+        border: 0.5px solid;
+        margin-right: 1rem;
+        width: 100%;
+    }
+
+    .profilo .lista-big li:last-child img{ 
+        width: 20%;
+        background-color: #7f8185;
+        border-radius: 50%;
     }
 
     /* main */

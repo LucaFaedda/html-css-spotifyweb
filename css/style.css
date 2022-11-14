@@ -26,12 +26,8 @@ footer{
 }
 
 aside{
-    background-color: yellow;
+    background-color: #000;
     width: 50px;
-}
-
-.sidebar-container{
-    height: 100%;
 }
 
 .sidebar{
@@ -39,6 +35,7 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
 
 main{
@@ -49,16 +46,7 @@ main{
     height: 100%;
 }
 
-h2{
-    margin: 1rem;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
 
-.sidebar .logo, .sidebar .profilo{
-    background-color: red;
-}
 
 #upgrade{
     width:  calc(100vw - 50px);
@@ -80,12 +68,13 @@ h2{
 
 /* aside */
 
-.logo-sm{
-    display: block;
-}
-
 .lista-sm{
     display: block;
+    padding-top: 0.5rem;
+}
+
+.lista-sm img{
+    width: 50%;
 }
 
 .logo-big{
@@ -94,6 +83,16 @@ h2{
 
 .lista-big{
     display: none;
+}
+
+
+.profilo .lista-sm li:first-of-type img{
+    width: 1rem;
+}
+
+.profilo .lista-sm li:nth-of-type(2) img{
+    background-color: #808080;
+    border-radius: 50%;
 }
 
 /* upgrade */
@@ -144,6 +143,13 @@ h2{
     color: #fff;
 }
 
+.container h2{
+    margin: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 .cards p{
     color: #7f8185;
     font-size: 14px;
@@ -168,32 +174,63 @@ h2{
     /* aside */
 
     aside{
-        width: 150px;
+        width: 200px;
     }
 
-    .sidebar .logo, .sidebar .profilo{
+    /* .sidebar .logo, .sidebar .profilo{
         background-color: red;
         margin-right: 1rem;
     }
-
-    .logo-sm{
-        display: none;
-    }
+     */
     
+
     .lista-sm{
         display: none;
     }
     
     .logo-big{
         display: block;
+        width: 80%;
+        margin: 1rem 0rem 1rem 1rem;
     }
     
     .lista-big{
         display: block;
+        text-align: left;
+        color: #7f8185 ;
+        margin-left: 1rem;
+    }
+
+    .lista-big li{
+        display: flex;
+        align-items: center;
+    }
+
+    .lista-big img{
+        width: 20%;
+        padding-right: 0.5rem;
     }
     
-    .profilo .lista-big li{ 
+    .lista-big span{
+        font-size: 14px;
+    }
+
+    .lista-big li{ 
         display: flex;
+        line-height: 3;
+        font-size: 12px;
+    }
+
+    .fa-plus{
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+        background-color: #7f8185;
+        color: #000;
+    }
+
+
+    .logo .lista-big{
+        margin-top: 2rem;
     }
 
     .profilo .lista-big li img:first-child{ 
@@ -206,11 +243,11 @@ h2{
     /* main */
 
     main{
-        width: calc(100vw - 150px);
+        width: calc(100vw - 200px);
     }
 
     #upgrade{
-        width:  calc(100vw - 150px);
+        width:  calc(100vw - 200px);
     }
 
 }

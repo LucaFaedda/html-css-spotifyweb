@@ -120,6 +120,10 @@ li:hover a{
     color: #fff;
 }
 
+.white{
+    color: #fff;
+}
+
 
 /* aside */
 
@@ -138,6 +142,10 @@ li:hover a{
 
 .lista-big{
     display: none;
+}
+
+.profilo{
+    height: 100px;
 }
 
 
@@ -347,12 +355,6 @@ li:hover a{
     aside{
         width: 200px;
     }
-
-    /* .sidebar .logo, .sidebar .profilo{
-        background-color: red;
-        margin-right: 1rem;
-    }
-     */
     
     .sidebar a{
         text-decoration: none;
@@ -369,6 +371,17 @@ li:hover a{
         margin: 1rem 0rem 1rem 1rem;
     }
     
+    .lista-big li a h2{
+        color: #fff;
+    }
+    
+    .lista-big li h2{
+        color: #fff;
+    }
+    
+
+
+
     .lista-big, .second-list{
         display: block;
         text-align: left;
@@ -394,10 +407,16 @@ li:hover a{
 
     .second-list{
         overflow-y: auto;
+        height: 50%;
     }
 
     .second-list li:first-child{
         color: #fff;
+    }
+
+    .overflow{
+        overflow-y: hidden;
+        height: calc(100% - 100px);
     }
 
     .fa-plus{

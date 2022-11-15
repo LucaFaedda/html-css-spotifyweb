@@ -86,6 +86,40 @@ main{
     padding: 5rem 1rem 1rem 1rem;
 }
 
+/* hover effects */
+
+#upgrade button:hover{
+    cursor: pointer;
+    padding: 0.75rem 2.5rem;
+    color: #fff;
+}
+
+li:hover a{
+    color: #fff;
+    
+}
+
+.album:hover i{
+    display: block;
+}
+
+.album:hover img{
+    filter: opacity(50%);
+}
+
+.navbar ul li a:hover{
+    border-bottom: solid 2px #2f722f;
+    color: #fff;
+}
+
+.icone a:hover{
+    color: #fff;
+}
+
+.corrente .testo p:hover{
+    color: #fff;
+}
+
 
 /* aside */
 
@@ -119,11 +153,11 @@ main{
 /* upgrade */
 
 #upgrade button{
-    margin-right: 0.75rem;
+    margin-right: 3rem;
     padding: 0.5rem 2rem;
     background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    border:solid 1px #fff;
+    color:  #ffffff73;
+    border:solid 1px  #ffffff73;
     border-radius: 20px;
 }
 
@@ -150,6 +184,16 @@ main{
     line-height: 3;
     padding-right: 1rem;
     font-size: 17px;
+}
+
+.navbar ul li a{
+    color: #7f8185;
+    text-decoration: none;
+}
+
+
+.second-list{
+    display: none;
 }
 /* sezione cards */
 
@@ -181,8 +225,24 @@ main{
     margin: 1rem ;
 }
 
+#recently-played .album{
+    position: relative;
+}
+
+
+
 .album img{
     width: 100%;
+}
+
+.album i{
+    display: none;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-size: 50px;
 }
 
 #artisti-popolari p,#per-jhon p{
@@ -205,12 +265,11 @@ main{
 .icone{
     display: flex;
     flex-direction: column;
-    color: #7f8185;
-    font-size: 15px;
 }
 
-.invisibile-mobile{
-    display: none;
+.icone a{
+    color: #7f8185;
+    font-size: 15px;
 }
 
 .icone i:first-child{
@@ -295,6 +354,10 @@ main{
     }
      */
     
+    .sidebar a{
+        text-decoration: none;
+        color: #7f8185;
+    }
 
     .lista-sm{
         display: none;
@@ -374,16 +437,6 @@ main{
 
     #upgrade{
         width:  calc(100vw - 200px);
-    }
-
-    /* footer */
-
-    .invisibile-mobile{
-        display: block;
-    }
-
-    .visibile-mobile{
-        display: none;
     }
 
 }

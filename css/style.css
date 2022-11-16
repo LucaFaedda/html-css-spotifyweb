@@ -100,13 +100,23 @@ li:hover a{
     
 }
 
-.album:hover i{
+/* .album:hover i{
     display: block;
 }
 
 .album:hover img{
     filter: opacity(50%);
+} */
+
+.card:hover i{
+    display: block;
 }
+
+.card:hover img{
+    filter: opacity(50%);
+    cursor: pointer;
+}
+
 
 .navbar ul li a:hover{
     border-bottom: solid 2px #2f722f;

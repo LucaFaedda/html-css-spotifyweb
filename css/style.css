@@ -125,20 +125,23 @@ li:hover a{
     font-size: 2rem;
 }
 
+.barra:hover, .barra2:hover{
+    cursor: pointer;
+}
+
 .barra:hover .barra-now, .barra2:hover .barra-now{
     background-color:#2f722f;
     width: 100%;
-    cursor: pointer;
 }
 
 .barra:hover .now-hover{
     display: block;
-    left: 100%;  
+    left: 100%;
 }
 
 .barra2:hover .now-hover{
     display: block;
-    left: 100%;  
+    left: 100%; 
 }
 
 .up:hover .mute{

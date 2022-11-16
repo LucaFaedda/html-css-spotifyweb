@@ -128,6 +128,7 @@ li:hover a{
 .barra:hover .barra-now, .barra2:hover .barra-now{
     background-color:#2f722f;
     width: 100%;
+    cursor: pointer;
 }
 
 .barra:hover .now-hover{
@@ -137,8 +138,11 @@ li:hover a{
 
 .barra2:hover .now-hover{
     display: block;
-    left: 100%;
-    
+    left: 100%;  
+}
+
+.up:hover .mute{
+    display: block;
 }
 
 /* aside */
@@ -388,14 +392,10 @@ li:hover a{
     padding-right: 0.5rem;
 }
 
-.spessore{
-    border-radius: 20px;
-    height: 5px;
-    background-color: red;
-    margin-right: 1rem;
-    width: 100px;
-
+.volume .fa-volume-xmark{
+    display: none;
 }
+
 
 @media screen and (min-width: 576px){
 
